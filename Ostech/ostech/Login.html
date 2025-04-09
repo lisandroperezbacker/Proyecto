@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Card</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="izquierda">
+            <div class="card-container">
+                <img src="./resours/Logo/ostechlogoFinal-transparente.png" alt="Logo" width="350" height="120" class="logo-img mb-3">
+                <div style="background-color: #000407;" class="card shadow">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-3 text-white">Iniciar Sesión</h3>
+                        <form action="login_usuario.php" method="POST">
+                            <div class="mb-3">
+                                <label for="email" class="form-label text-white">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="mail" name="mail" placeholder="Ingresa tu correo">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label text-white">Contraseña</label>
+                                <input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="Ingresa tu contraseña">
+                                <div class="text-center mt-3">
+                                  <a href="#" class="text-decoration-none">¿Olvidaste tu contraseña?</a>
+                              </div>
+                            </div>
+                            <button type="submit" class="btn btn-outline-info w-100 text-white">Ingresar</button>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Sección Derecha -->
+    <div class="derecha">
+        <h1 class="mb-3">¡Bienvenido!</h1>
+        <p>Si aún no tienes una cuenta,</p>
+        <p>únete a nosotros.</p>
+        <button class="animated-button">
+            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+            </svg>
+            <span class="text">Registrarse</span>
+            <span class="circle"></span>
+            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+            </svg>
+        </button>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
